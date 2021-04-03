@@ -1,4 +1,4 @@
-from tkinter import Tk, Frame, Label
+from tkinter import Tk, Frame, Label, Button
 from VoiceAi import wishme
 
 class Main(Tk):
@@ -11,12 +11,11 @@ class Main(Tk):
 
         self.f1 = Frame(master=self)
         
-        self.txt1 = Label(master=self.f1, text="RMX")
+        self.txt1 = Button(master=self.f1, text="Greet me", command=wishme)
         self.txt1.pack()
 
         self.f1.pack()
 
-        wishme()
 
 if __name__ == "__main__":
 
