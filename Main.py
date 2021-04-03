@@ -1,5 +1,5 @@
 from tkinter import Tk, Frame, Label, Button
-from VoiceAi import wishme , cycle
+from VoiceLib import wishme , cycle
 
 class Main(Tk):
 
