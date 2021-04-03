@@ -108,9 +108,9 @@ def cycle():
             vsc_loc01 = '"C:\\Users\\Public\\Desktop\\Brave"'
             os.startfile(vsc_loc01)
 
-        elif 'teams' or 'meeting' in query:
-            vsc_loc02 = '"C:\\Users\\Ritish Mohapatra\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Teams"'
-            os.startfile(vsc_loc02)
+        # elif 'teams' or 'meeting' in query:
+        #     vsc_loc02 = '"C:\\Users\\Ritish Mohapatra\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Teams"'
+        #     os.startfile(vsc_loc02)
 
         elif 'shutdown' in query:
 
@@ -119,9 +119,9 @@ def cycle():
             # os.startfile(vsc_loc)
 
 
-        elif 'Bye' or 'exit' or 'bye rmx' in query:
-            speak("Thanks for giving me your valuable time")
-            exit() 
+        elif 'bye' in query:
+            speak("Thanks for giving me your valuable time")    
+            return 
 
         elif 'email to sender' in query:
             try:
