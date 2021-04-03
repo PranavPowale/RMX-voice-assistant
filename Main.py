@@ -13,10 +13,12 @@ class Main(Tk):
         self.f1 = Frame(master=self)
         
         self.txt1 = Button(master=self.f1, text="Greet me", command=wishme)
-
         self.txt1.pack()
-        # wishme()
 
+        self.txt2 = Button(master=self.f1, text="Start routine", command=cycle)
+        self.txt2.pack()
+
+        self.after(2000, cycle)
 
         self.f1.pack()
 
@@ -25,4 +27,3 @@ if __name__ == "__main__":
 
     app = Main()
     app.mainloop()
-    # app.after(1000, wishme)
