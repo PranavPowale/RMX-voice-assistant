@@ -18,7 +18,7 @@ class Main(Tk):
         self.txt2 = Button(master=self.f1, text="Start routine", command=cycle)
         self.txt2.pack()
 
-        self.after(2000, cycle)
+        # self.after(2000, cycle)
 
         self.f1.pack()
 
