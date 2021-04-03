@@ -1,5 +1,5 @@
-from tkinter import Tk, Frame, Label
-from VoiceAi import wishme
+from tkinter import Tk, Frame, Label, Button
+from VoiceAi import wishme , cycle
 
 class Main(Tk):
 
@@ -8,10 +8,11 @@ class Main(Tk):
         super().__init__(screenName=screenName, baseName=baseName, useTk=useTk, sync=sync, use=use)
 
         self.title("RMX")
+        self.geometry("600x600")
 
         self.f1 = Frame(master=self)
         
-        self.txt1 = Label(master=self.f1, text="RMX")
+        self.txt1 = Button(master=self.f1, text="Greet me", command=wishme)
 
         self.txt1.pack()
         # wishme()
@@ -19,10 +20,9 @@ class Main(Tk):
 
         self.f1.pack()
 
-        
 
 if __name__ == "__main__":
 
     app = Main()
     app.mainloop()
-    app.after(1000, wishme)
+    # app.after(1000, wishme)

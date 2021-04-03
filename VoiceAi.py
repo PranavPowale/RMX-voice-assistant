@@ -62,10 +62,11 @@ def sendemail(to, content):
     server.close()
 
 
-if __name__ == "__main__": 
+# if __name__ == "__main__": 
     
 
-    wishme()
+    # wishme()
+def cycle():
     while True:
         # if 1:
         query = takecommand().lower()
