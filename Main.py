@@ -12,13 +12,17 @@ class Main(Tk):
         self.f1 = Frame(master=self)
         
         self.txt1 = Label(master=self.f1, text="RMX")
+
         self.txt1.pack()
+        # wishme()
+
 
         self.f1.pack()
 
-        wishme()
+        
 
 if __name__ == "__main__":
 
     app = Main()
     app.mainloop()
+    app.after(1000, wishme)
